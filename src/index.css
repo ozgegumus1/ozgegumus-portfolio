@@ -1,0 +1,81 @@
+@import 'tailwindcss';
+@import './styles/gooey.css';
+
+@theme {
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --color-ink: #f5f2ed;
+  --color-ink-muted: rgba(245, 242, 237, 0.55);
+  --color-ink-dim: rgba(245, 242, 237, 0.32);
+  --color-line: rgba(245, 242, 237, 0.12);
+  --color-line-hover: rgba(245, 242, 237, 0.35);
+  --color-glow: #5eead4;
+  --color-glow-soft: rgba(94, 234, 212, 0.45);
+  --color-glow-warm: rgba(245, 242, 237, 0.55);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-ink);
+  background: #2a2826;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.site-content {
+  position: relative;
+  color: var(--color-ink);
+}
+
+.site-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.meta-label {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-ink-dim);
+}
+
+.meta-label em {
+  font-style: normal;
+  color: var(--color-glow);
+  text-shadow: 0 0 20px var(--color-glow-soft);
+}
+
+.display-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 0.94;
+  color: var(--color-ink);
+}
+
+.body-copy {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.85;
+  letter-spacing: 0.01em;
+  color: var(--color-ink-muted);
+}
+
+.divider-line {
+  height: 1px;
+  background: var(--color-line);
+}
