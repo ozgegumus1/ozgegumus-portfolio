@@ -106,9 +106,11 @@ export function Projects() {
                         <p className="body-copy max-w-lg">{project.description}</p>
                         <p className="meta-label mt-5">{project.techStack.join(' · ')}</p>
                         <div className="mt-8 flex gap-10">
-                          <TextLink href={project.githubUrl} external>
-                            {ui.projects.source}
-                          </TextLink>
+                          {project.githubUrl && (
+                            <TextLink href={project.githubUrl} external>
+                              {ui.projects.source}
+                            </TextLink>
+                          )}
                           {project.liveUrl && (
                             <TextLink href={project.liveUrl} external>
                               {ui.projects.live}

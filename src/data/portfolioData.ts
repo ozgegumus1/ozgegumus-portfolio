@@ -16,7 +16,7 @@ export interface Project {
   description: string
   year: string
   techStack: string[]
-  githubUrl: string
+  githubUrl?: string
   liveUrl?: string
 }
 
@@ -109,6 +109,33 @@ export const projects: Project[] = [
     year: '2026',
     techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     githubUrl: 'https://github.com/ozgegumus1',
+  },
+  {
+    id: 'gasoil',
+    title: 'GasOil — Kurumsal Web Sitesi',
+    description:
+      'Endüstriyel üretim yapan uluslararası bir B2B firması için geliştirilmiş modern web arayüzü. Ürün kataloglarının hızlı ve her cihaza tam uyumlu şekilde sergilenmesi hedeflenerek, markanın kurumsal kimliğine uygun temiz bir kod yapısı oluşturulmuştur.',
+    year: '2025',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'React'],
+    liveUrl: 'https://gasoil.com.tr',
+  },
+  {
+    id: 'linespine',
+    title: 'LineSpine — Ürün & Hizmet Tanıtım Sitesi',
+    description:
+      'Kullanıcı deneyimini merkeze alan, modern ve dinamik bir web projesi. Markanın dijital kimliğini ve vizyonunu öne çıkarmak amacıyla hızlı yüklenen, sade ve tamamen mobil uyumlu bir arayüz mimarisiyle geliştirilmiştir.',
+    year: '2025',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'React'],
+    liveUrl: 'https://linespine.com',
+  },
+  {
+    id: 'b2bagtaslar',
+    title: 'B2B Ağtaşlar Group — Kurumsal Çözüm Sitesi',
+    description:
+      'Güvenlik sistemleri ve teknolojik altyapı çözümleri sunan bir B2B firması için geliştirilmiş modern kurumsal web sitesi. Müşteri güvenini yansıtan profesyonel tasarımıyla firmanın hizmetleri ve iletişim kanalları net biçimde hedeflendi.',
+    year: '2025',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'React'],
+    liveUrl: 'https://b2bagtaslargroup.com',
   },
 ]
 

@@ -29,12 +29,13 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--color-line)] bg-[rgba(28,26,24,0.5)] backdrop-blur-md">
       <nav
-        className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5 sm:px-8"
+        className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4 sm:px-8 sm:py-5"
         aria-label="Main navigation"
       >
+        {/* İsim — sadece sm ve üzerinde görünür */}
         <motion.a
           href="#hero"
-          className="text-[0.6875rem] font-medium uppercase tracking-[0.28em] text-[var(--color-ink)]"
+          className="hidden sm:block text-[0.6875rem] font-medium uppercase tracking-[0.28em] text-[var(--color-ink)]"
           whileHover={{
             scale: 1.06,
             textShadow: '0 0 24px rgba(94,234,212,0.4)',
@@ -46,7 +47,8 @@ export function Navbar() {
           {personalInfo.name.split(' ')[0]}
         </motion.a>
 
-        <ul className="flex gap-7 sm:gap-11">
+        {/* Linkler — mobilde tam genişlik, masaüstünde normal */}
+        <ul className="flex w-full justify-between sm:w-auto sm:justify-end sm:gap-11">
           {navLinks.map((link) => {
             const isActive = activeId === link.id
             const isHovered = hoveredId === link.id
@@ -55,7 +57,7 @@ export function Navbar() {
               <li key={link.id}>
                 <motion.a
                   href={`#${link.id}`}
-                  className="relative block py-1 text-[0.6875rem] font-medium uppercase tracking-[0.22em]"
+                  className="relative block py-1 text-[0.55rem] sm:text-[0.6875rem] font-medium uppercase tracking-[0.12em] sm:tracking-[0.22em]"
                   onHoverStart={() => setHoveredId(link.id)}
                   onHoverEnd={() => setHoveredId(null)}
                   whileTap={{ scale: 0.9 }}
