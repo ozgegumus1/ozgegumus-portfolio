@@ -111,6 +111,16 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/ozgegumus1',
   },
   {
+    id: 'vesta-pms',
+    title: 'Vesta PMS — Otel Yönetim Paneli',
+    description:
+      'Vesta, otelcilik sektöründeki operasyonel süreçleri ve yasal yükümlülükleri frontend mimarisi üzerinde simüle eden modern bir Otel Yönetim Paneli (PMS) çalışmasıdır. Kullanıcıların oda durumlarını dinamik olarak izleyebildiği canlı bir resepsiyon matrisi ve hızlı check-in/check-out akışları barındırır. Projenin odak noktası, resepsiyona girişi yapılan misafirlerin verilerini işleyerek asenkron süreçlerle resmi onay kodları üreten sanal bir KBS modülünü merkezi bir state yönetimiyle senkronize çalıştırmasıdır. Tasarım tarafında göz yormayan, siber-koyu tonlarda ve glassmorphism efektlerine sahip modern bir kullanıcı arayüzü sunar.',
+    year: '2026',
+    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    githubUrl: 'https://github.com/ozgegumus1/vesta-pms',
+    liveUrl: 'https://vesta-pms.vercel.app',
+  },
+  {
     id: 'gasoil',
     title: 'GasOil — Kurumsal Web Sitesi',
     description:
