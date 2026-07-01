@@ -76,8 +76,8 @@ export const projects: Project[] = [
   {
     id: 'flocksocial',
     title: 'FlockSocial — Sosyal Medya Platformu',
-    description:
-      'Sıfırdan geliştirdiğim tam fonksiyonel sosyal medya uygulaması. Supabase Auth ile kayıt, giriş ve oturum yönetimi; gerçek zamanlı post paylaşımı ve listeleme; kalıcı beğeni sistemi; profil sayfası (biyografi, takipçi sayısı, kullanıcı postları); takip et / takipten çık; beğeni ve takip için Supabase trigger ile otomatik bildirimler. React Router ile korumalı rotalar, Context API ile global auth, mobil uyumlu arayüz ve alt menü. GitHub push ile Vercel üzerinde otomatik CI/CD yayını.',
+  description:
+      `Flock, React ve Supabase kullanarak uçtan uca kendi kurduğum bir sosyal medya uygulaması. PWA olarak çalıştığı için telefona ana ekran uygulaması gibi eklenebiliyor. Merkezinde klasik bir akış var: post atma, beğenme, yorumlama, hashtag üzerinden arama. Buna ek olarak 24 saatte kaybolan bir hikaye özelliği geliştirdim. Mesajlaşma kısmını Supabase Realtime üzerine kurdum — mesajlar anlık iletiliyor, karşı taraf yazarken gösteriliyor, okundu bilgisi düşüyor. Gizli hesap açma, takip isteklerini onaylama, kullanıcı engelleme gibi işlemler Row Level Security ile güvence altında. Bildirimler (beğeni, yorum, takip) veritabanı trigger'larıyla otomatik üretiliyor ve okunmamış sayısı gerçek zamanlı takip ediliyor.`,
     year: '2025',
     techStack: [
       'React',
