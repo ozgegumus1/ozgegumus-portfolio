@@ -147,6 +147,15 @@ export const projects: Project[] = [
     techStack: [],
     liveUrl: 'https://bookieweb.vercel.app/',
   },
+  {
+    id: 'origin',
+    title: 'ORIGIN — WebGL Deneyim Sitesi',
+    description:
+      'Kaydırmayla yönetilen bir WebGL deneyimi. Sayfayı aşağı kaydırdıkça binlerce parçacık sırayla galaksi, küre, torus düğümü ve dalga gibi farklı şekillere dönüşüyor; kamera açısı ve renkler de bu dönüşüme eşlik ediyor. Three.js ile yapılmış, tek sayfalık interaktif bir görsel yolculuk.',
+    year: '2026',
+    techStack: ['Three.js', 'JavaScript', 'WebGL'],
+    liveUrl: 'https://webimmersive.vercel.app',
+  },
 ]
 
 export const references: Reference[] = [
