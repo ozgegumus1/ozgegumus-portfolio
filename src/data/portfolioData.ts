@@ -147,6 +147,15 @@ export const projects: Project[] = [
     techStack: ['HTML', 'CSS', 'JavaScript', 'React'],
     liveUrl: 'https://b2bagtaslargroup.com',
   },
+  {
+    id: 'inkwell',
+    title: 'Inkwell — Etkileşimli Kitap Sitesi',
+    description:
+      'Scroll ile ilerledikçe sayfa 3 boyutlu nesnelerle birlikte derinlik kazanan, kitap/yayınevi temalı bir web deneyimi. Sayfa kaydırma hareketi, sahnedeki objelerin dönüşünü ve konumunu kontrol ediyor; statik bir tanıtım sayfası yerine keşfedilen bir hikâye anlatımı kurgulandı.',
+    year: '2026',
+    techStack: [],
+    liveUrl: 'https://bookieweb.vercel.app/',
+  },
 ]
 
 export const references: Reference[] = [
