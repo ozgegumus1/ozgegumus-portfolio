@@ -93,15 +93,6 @@ export const projects: Project[] = [
     liveUrl: 'https://flocksocial.vercel.app',
   },
   {
-    id: 'adalet-hukuk',
-    title: 'Adalet Hukuk — Hukuki Danışmanlık',
-    description:
-      'Hukuk bürosu için kurumsal tanıtım sitesi: ticaret, gayrimenkul, aile, iş, ceza ve sözleşme hukuku alanlarında hizmet kartları; profesyonel tipografi ve koyu lacivert–altın renk paleti; Ana Sayfa, Hakkımızda, Hizmetler, Ekip ve İletişim bölümleri. Responsive, okunabilir ve güven veren bir kullanıcı deneyimi hedeflendi.',
-    year: '2025',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Responsive Tasarım'],
-    githubUrl: 'https://github.com/ozgegumus1',
-  },
-  {
     id: 'portfolio',
     title: 'Kişisel Portföy Sitesi',
     description:
