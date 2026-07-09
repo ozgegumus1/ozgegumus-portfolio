@@ -35,13 +35,12 @@ export interface Reference {
 
 export const personalInfo = {
   name: 'Özge Gümüş',
-  role: 'Frontend Developer',
+  role: 'Junior Developer',
   tagline: 'Modern arayüzler · Güvenli mimari · Sürdürülebilir kod',
   email: 'ozgegumus1@icloud.com',
   location: 'Mersin, Türkiye',
-  bio: `HTML, CSS, JavaScript, TypeScript, React ve Tailwind CSS ile modern ve kullanıcı odaklı arayüzler geliştiriyorum. Projelerimde dinamik veri yönetimi için API entegrasyonlarını ve Supabase'i aktif kullanıyor; arka plan süreçlerinde Python'dan yararlanıyorum. İş akışımda yapay zeka araçlarıyla geliştirme sürecini ve kod kalitesini optimize ediyorum.
-
-Siyaset Bilimi lisans mezunuyum. Kısa süredir freelance frontend developer olarak çalışıyorum. Ethical Hacker (siber güvenlik) eğitimim devam ediyor; Linux ve sanal makine (VirtualBox) ortamlarında rahatım. Sıfırdan tam fonksiyonel web uygulamaları geliştirebilecek teknik bağımsızlığa sahibim; temiz ve sürdürülebilir koda odaklanıyorum.`,
+  bio: `Siyaset Bilimi ve İşletme Yönetimi mezunuyum.
+  Geliştirme sürecinde ön yüzde dinamik yapılara ve tip güvenliğine, arka planda ise veri tabanı yönetimi ile otomasyonlara odaklanıyorum. Projeleri, kullanıcı deneyiminden veri akışına kadar tüm teknik gereksinimleriyle bir bütün olarak ele alıyorum.Projelerimde dinamik veri yönetimi için API entegrasyonlarını ve Supabase'i aktif kullanıyor; arka plan süreçlerinde Python'dan yararlanıyorum. İş akışımda yapay zeka araçlarıyla geliştirme sürecini ve kod kalitesini optimize ediyorum. Ethical Hacker (siber güvenlik) eğitimim devam ediyor; Linux ve sanal makine (VirtualBox) ortamlarında rahatım. Sıfırdan tam fonksiyonel web uygulamaları geliştirebilecek teknik bağımsızlığa sahibim; temiz ve sürdürülebilir koda odaklanıyorum.`,
 } as const
 
 export const navLinks: NavLink[] = [
@@ -81,6 +80,24 @@ export const projects: Project[] = [
     year: '2026',
     techStack: ['PHP', 'Node.js', 'WebSocket (ws)', 'MySQL', 'REST API', 'JavaScript', 'PWA'],
   },
+   {
+    id: 'gasoil',
+    title: 'GasOil — Kurumsal Web Sitesi',
+    description:
+      'Endüstriyel üretim yapan uluslararası bir B2B firması için geliştirilmiş modern web arayüzü. Ürün kataloglarının hızlı ve her cihaza tam uyumlu şekilde sergilenmesi hedeflenerek, markanın kurumsal kimliğine uygun temiz bir kod yapısı oluşturulmuştur.',
+    year: '2025',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'React'],
+    liveUrl: 'https://gasoil.com.tr',
+  },
+  {
+    id: 'b2bagtaslar',
+    title: 'B2B Ağtaşlar Group — Kurumsal Çözüm Sitesi',
+    description:
+      'Güvenlik sistemleri ve teknolojik altyapı çözümleri sunan bir B2B firması için geliştirilmiş modern kurumsal web sitesi. Müşteri güvenini yansıtan profesyonel tasarımıyla firmanın hizmetleri ve iletişim kanalları net biçimde hedeflendi.',
+    year: '2025',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'React'],
+    liveUrl: 'https://b2bagtaslargroup.com',
+  },
   {
     id: 'flocksocial',
     title: 'FlockSocial — Sosyal Medya Platformu',
@@ -101,15 +118,6 @@ export const projects: Project[] = [
     liveUrl: 'https://flocksocial.vercel.app',
   },
   {
-    id: 'portfolio',
-    title: 'Kişisel Portföy Sitesi',
-    description:
-      'Bu site — gooey SVG arka plan, fare ile etkileşimli gradient, Framer Motion animasyonlar ve portfolioData.ts üzerinden yönetilen dinamik içerik yapısı.',
-    year: '2026',
-    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    githubUrl: 'https://github.com/ozgegumus1',
-  },
-  {
     id: 'vesta-pms',
     title: 'Vesta PMS — Otel Yönetim Paneli',
     description:
@@ -119,15 +127,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/ozgegumus1/vesta-pms',
     liveUrl: 'https://vesta-pms.vercel.app',
   },
-  {
-    id: 'gasoil',
-    title: 'GasOil — Kurumsal Web Sitesi',
-    description:
-      'Endüstriyel üretim yapan uluslararası bir B2B firması için geliştirilmiş modern web arayüzü. Ürün kataloglarının hızlı ve her cihaza tam uyumlu şekilde sergilenmesi hedeflenerek, markanın kurumsal kimliğine uygun temiz bir kod yapısı oluşturulmuştur.',
-    year: '2025',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'React'],
-    liveUrl: 'https://gasoil.com.tr',
-  },
+ 
   {
     id: 'linespine',
     title: 'LineSpine — Ürün & Hizmet Tanıtım Sitesi',
@@ -136,15 +136,6 @@ export const projects: Project[] = [
     year: '2025',
     techStack: ['HTML', 'CSS', 'JavaScript', 'React'],
     liveUrl: 'https://linespine.com',
-  },
-  {
-    id: 'b2bagtaslar',
-    title: 'B2B Ağtaşlar Group — Kurumsal Çözüm Sitesi',
-    description:
-      'Güvenlik sistemleri ve teknolojik altyapı çözümleri sunan bir B2B firması için geliştirilmiş modern kurumsal web sitesi. Müşteri güvenini yansıtan profesyonel tasarımıyla firmanın hizmetleri ve iletişim kanalları net biçimde hedeflendi.',
-    year: '2025',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'React'],
-    liveUrl: 'https://b2bagtaslargroup.com',
   },
   {
     id: 'inkwell',
