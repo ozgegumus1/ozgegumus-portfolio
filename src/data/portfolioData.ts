@@ -74,6 +74,14 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
   {
+    id: 'intra',
+    title: "Intra — Kurumsal İç İletişim & Mesai Sistemi",
+    description:
+      `Büyük işletmelerin iç iletişim ve mesai ihtiyaçlarını çözen, hazır framework kullanmadan sıfırdan geliştirdiğim full stack SaaS ürünüm Intra'yı henüz tamamladım. Performans için HTTP isteklerini PHP (REST API) ile yönetirken, anlık mesajlaşmayı sıfır gecikmeli Node.js ve WebSocket sunucusuyla kurguladım. Bir personel sistemde pasife alındığında, açık olan WebSocket bağlantısını milisaniyeler içinde sunucudan kesen dinamik bir altyapı. Admin girişleri zamanlama saldırılarına karşı hash_equals ile doğrulanır. Kimlik taklidini engelleyen, personele özel benzersiz giriş kodları ve admin panelinden mesai kayıtlarını Excel'e aktarma seçeneği. Arayüz ve mesai manipülasyonlarını engellemek için cihaz saatini yok sayarak tüm giriş/çıkış kayıtlarını tamamen sunucu saatine endeksledim, yetkilendirmeleri de sunucu tarafında çift katmanlı doğrulattım. Geçmiş kayıtların İK raporları için korunması ve bir mobil uygulama gibi çalışan tam ekran PWA deneyimi sundum.`,
+    year: '2026',
+    techStack: ['PHP', 'Node.js', 'WebSocket (ws)', 'MySQL', 'REST API', 'JavaScript', 'PWA'],
+  },
+  {
     id: 'flocksocial',
     title: 'FlockSocial — Sosyal Medya Platformu',
   description:
